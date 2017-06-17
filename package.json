@@ -1,0 +1,22 @@
+{
+  "name": "erc20-msig-approver",
+  "version": "1.0.0",
+  "description": "Calls ERC20 Approves from Gnosis Multisig Wallet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nginnever/erc20-msig-approver.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nginnever/erc20-msig-approver/issues"
+  },
+  "homepage": "https://github.com/nginnever/erc20-msig-approver#readme",
+  "dependencies": {
+    "web3": "^0.19.0"
+  }
+}
