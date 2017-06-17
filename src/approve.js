@@ -24,6 +24,11 @@ if(!web3._extend.utils.isAddress(process.argv[2])) {
   return
 }
 
+if(process.argv[3] <= 0) {
+  console.log("must approve greater than 0 tokens")
+  return
+}
+
 //console.log(web3.eth.accounts)
 
 // Arg1: Address we approving funds to
