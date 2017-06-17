@@ -18,13 +18,15 @@ var walletInst = walletContract.at(walletAddr)
 console.log(process.argv[2])
 console.log(process.argv[3])
 
+// check properly formatted address
 if(!web3._extend.utils.isAddress(process.argv[2])) {
   console.log("supplied address is incorrect")
   return
 }
+
 // Arg1: Address we approving funds to
 // Arg2: The amount to approve
 var myCallData = tokenInst.approve.getData(process.argv[2], process.argv[3]);
 console.log(myCallData)
 
-//walletInst.submitTransaction(tokenAddr, 0, myCallData, {from:web3.eth.accounts[3], gas:500000})
+walletInst.submitTransaction(tokenAddr, 0, myCallData, {from:web3.eth.accounts[3], gas:500000})
