@@ -6,7 +6,7 @@ const tokenAbi = require('./tokenAbi.js')
 const walletAbi = require('./walletAbi.js')
 
 // Token address 0xfe00c2ae296e752490425817339977a155e989fe
-var tokenAddr = '0xfe00c2ae296e752490425817339977a155e989fe'
+var tokenAddr = '0x90ab6d52445a39de851d3521ea031862ca6e16e9'
 var tokenContract = web3.eth.contract(tokenAbi)
 var tokenInst = tokenContract.at(tokenAddr)
 
@@ -23,6 +23,8 @@ if(!web3._extend.utils.isAddress(process.argv[2])) {
   console.log("supplied address is incorrect")
   return
 }
+
+//console.log(web3.eth.accounts)
 
 // Arg1: Address we approving funds to
 // Arg2: The amount to approve
